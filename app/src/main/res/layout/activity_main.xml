@@ -15,12 +15,19 @@
         android:id="@+id/edt_farenheit"
         android:inputType="numberDecimal"/>
 
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/btn_converte"
-        android:text="@string/btn_converte"
-        android:layout_marginTop="25dp"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/btn_converte_celsius"
+            android:text="@string/btn_converte_celsius"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/btn_converte_faren"
+            android:text="@string/btn_converte_faren"
+            android:layout_marginTop="25dp"/>
 
     <TextView
         android:layout_width="match_parent"
