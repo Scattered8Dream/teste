@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App2_ConversorTemperatura</string>
+    <string name="str_dica_celsius">Digite a temperatura em Fahrenheit</string>
+    <string name="btn_converte">Converter para Celsius</string>
+</resources>
