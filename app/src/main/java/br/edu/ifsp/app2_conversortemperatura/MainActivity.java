@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import br.edu.ifsp.app2_conversortemperatura.CelsiusStrategy;
 import br.edu.ifsp.app2_conversortemperatura.FarenStrategy;
+import br.edu.ifsp.app2_conversortemperatura.KelvinStrategy;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private CelsiusStrategy celsiusStrategy = CelsiusStrategy.getInstance();
     private FarenStrategy farenStrategy = FarenStrategy.getInstance();
+    private KelvinStrategy kelvinStrategy = KelvinStrategy.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +75,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewResult.setText(String.format("%.2f °C", value));
     }
 
-    void showText(Double value){
+    private void conversionKelvin(){
+        double value = kelvinStrategy.getConversion(getValue());
         viewResult.setText(String.format("%.2f °C", value));
     }
 }
